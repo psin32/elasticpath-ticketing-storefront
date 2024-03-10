@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'bellslim_black';
+    src: url('/public/bellslim_medium-webfont.woff2') format('woff2');
+}
