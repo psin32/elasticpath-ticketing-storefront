@@ -46,7 +46,9 @@ export default function RegionSelector(): JSX.Element {
                 }}
             >
                 {catalogRule.data.map((rule: any) => {
-                    return <option key={rule.id} value={rule?.attributes?.tags[0]}><Trans t={t} i18nKey={`regions.${rule?.attributes?.tags[0]}`} /></option>
+                    return <option key={rule.id} value={rule?.attributes?.tags?.[0] ? rule?.attributes?.tags[0] : rule?.attributes?.name}>
+                        {rule?.attributes?.tags?.[0] ? rule?.attributes?.tags[0] : rule?.attributes?.name}
+                    </option>
                 })}
             </select>
         )

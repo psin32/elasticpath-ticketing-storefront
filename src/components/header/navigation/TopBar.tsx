@@ -20,9 +20,6 @@ export default function TopBar(): JSX.Element {
                     <div className="ml-4 text-gray-400">
                         <Trans t={t} i18nKey="header.label.business" />
                     </div>
-                    <div className="ml-4 text-gray-400">
-                        <Trans t={t} i18nKey="header.label.bell-for-better" />
-                    </div>
                     <div className="ml-auto text-gray-300">
                         <div className="flex flex-row-reverse">
                             <LanguageSelector />
