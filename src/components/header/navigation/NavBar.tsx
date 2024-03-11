@@ -3,7 +3,6 @@ import CartModal from "@/components/cart/CartModal"
 import LoginModal from "./LoginModal"
 import Logo from "./Logo";
 import SearchBar from "./SearchBar";
-import CurrencySelector from "./CurrencySelector";
 import Content from "@/components/common/Content";
 
 interface INavBar {
@@ -18,7 +17,6 @@ export default function NavBar({ content }: INavBar): JSX.Element {
                 <Logo />
                 <Content content={content}></Content>
                 <div className="ml-auto flex items-center">
-                    <CurrencySelector />
                     <LoginModal />
                     <SearchBar />
                     <CartModal />

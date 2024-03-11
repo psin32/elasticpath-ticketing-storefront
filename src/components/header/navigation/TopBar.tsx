@@ -1,11 +1,11 @@
 'use client'
 
 import { useTranslation } from "@/app/i18n/client"
-import { getCookie, setCookie } from "cookies-next"
-import { useRouter } from "next/navigation"
+import { getCookie } from "cookies-next"
 import { Trans } from 'react-i18next/TransWithoutContext'
 import LanguageSelector from "./LanguageSelector"
 import RegionSelector from "./RegionSelector"
+import CurrencySelector from "./CurrencySelector"
 
 export default function TopBar(): JSX.Element {
     const { t } = useTranslation(getCookie("locale") || "", "header", {})
@@ -27,6 +27,7 @@ export default function TopBar(): JSX.Element {
                         <div className="flex flex-row-reverse">
                             <LanguageSelector />
                             <RegionSelector />
+                            <CurrencySelector />
                         </div>
                     </div>
                 </div>

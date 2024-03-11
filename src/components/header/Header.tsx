@@ -18,7 +18,7 @@ export default async function Header() {
 
   return (
     <>
-      <header className="relative bg-[#00549a] text-white">
+      <header className="relative">
         <TopBar />
         <NavBar content={content}></NavBar>
       </header>

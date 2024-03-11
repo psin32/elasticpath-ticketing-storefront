@@ -19,8 +19,8 @@ const MenuLink = ({ blok }: any) => {
                   className={classNames(
                     open
                       ? 'border-primary-600 text-primary-600'
-                      : 'border-transparent text-white hover:text-primary-300',
-                    'relative z-10 -mb-px flex items-center border-b-2 pt-px text-lg font-thin transition-colors duration-200 ease-out rounded-none outline-0'
+                      : 'border-transparent text-primary-800 hover:text-primary-600',
+                    'relative z-10 -mb-px flex items-center border-b-2 pt-px text-md font-thin transition-colors duration-200 ease-out rounded-none outline-0'
                   )}
                 >
                   {blok.name}
@@ -37,7 +37,7 @@ const MenuLink = ({ blok }: any) => {
               >
                 <Popover.Panel className="absolute inset-x-0 top-full text-sm text-primary-700">
                   <div className="absolute inset-0 top-1/2 bg-white shadow-none" aria-hidden="true" />
-                  <div className="relative bg-white">
+                  <div className="relative bg-primary-50">
                     <div className="mx-auto max-w-7xl px-8">
                       <div className="grid grid-cols-1 gap-x-8 gap-y-10 py-16">
                         <div className="row-start-1 grid grid-cols-6 gap-x-8 gap-y-10 text-sm">

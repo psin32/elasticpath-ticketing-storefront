@@ -1,5 +1,5 @@
 export const config = {
-    title: 'Bell - Elastic Path Store',
+    title: 'Law Society - Elastic Path Store',
     description: 'Shop trending cloths here',
     featuredProducts: [
         "essential-crew-neck-t-shirt",
