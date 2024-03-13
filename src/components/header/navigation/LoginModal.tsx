@@ -21,7 +21,7 @@ export default function LoginModal(): JSX.Element {
     const [clicked, setClicked] = useState<boolean>(false);
     const { data: session, status } = useSession()
     const [error, setError] = useState("");
-    const { t } = useTranslation(getCookie("locale") || "", "profile", {})
+    const { t } = useTranslation(getCookie("locale") || "en", "profile", {})
 
     const handleSignIn = async (event: React.FormEvent<HTMLFormElement>) => {
         setClicked(true)

@@ -28,7 +28,6 @@ export default function  CurrencySelector(): JSX.Element {
             method: "POST"
         })
         const currencies = await response.json()
-        console.log("currencies", currencies)
         setCurrencies(currencies)
     }
 

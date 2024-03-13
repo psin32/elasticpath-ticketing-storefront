@@ -2,7 +2,7 @@ export const config = {
     title: 'Law Society - Elastic Path Store',
     description: 'Shop trending cloths here',
     featuredProducts: [
-        "essential-crew-neck-t-shirt",
+        "4th-annual-international-antitrust-summer-conference-2024",
         "essential-stretch-jeans",
         "casual-dress-bundle"
     ],

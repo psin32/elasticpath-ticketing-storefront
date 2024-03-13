@@ -1,15 +1,12 @@
 'use client'
 
-import { useTranslation } from "@/app/i18n/client"
 import { getCookie, setCookie } from "cookies-next"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
-import { Trans } from 'react-i18next/TransWithoutContext'
 
 export default function RegionSelector(): JSX.Element {
-    const [catalog, setCatalog] = useState(getCookie("catalog") || "ontario")
+    const [catalog, setCatalog] = useState(getCookie("catalog") || "")
     const [catalogRule, setCatalogRule] = useState<any>()
-    const { t } = useTranslation(getCookie("locale") || "en", "header", {})
     const router = useRouter()
 
     const changeCatalog = (catalog: string) => {
@@ -46,7 +43,7 @@ export default function RegionSelector(): JSX.Element {
                 }}
             >
                 {catalogRule.data.map((rule: any) => {
-                    return <option key={rule.id} value={rule?.attributes?.tags?.[0] ? rule?.attributes?.tags[0] : rule?.attributes?.name}>
+                    return <option key={rule.id} value={rule?.attributes?.tags?.[0] ? rule?.attributes?.tags[0] : ""}>
                         {rule?.attributes?.tags?.[0] ? rule?.attributes?.tags[0] : rule?.attributes?.name}
                     </option>
                 })}
